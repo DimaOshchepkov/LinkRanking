@@ -1,10 +1,12 @@
-# Кусовой проект на тему "Разработка системы ссылочного ранжирования"
+# Курсовой проект на тему "Разработка системы ссылочного ранжирования"
 
 Этот курсовой проект был создан в рамках дисциплины "Терория алгоритмов". В нем рассматриваются 2 наиболее распространенных алгоритма ссылочного ранжирования: Pagrank и HITS.
 
 ## Быстрый старт
 Пример использования pagrank :
 ```cpp
+#include "..\LinkRanking\LinkRanking.h"
+
 auto x = TransitionMatrixBuilder()
             .SetPath("path/to/datafram")
             .SetSourceName("userId")
@@ -26,6 +28,7 @@ pagerank - будет вектором персонализации.
 
 Пример использования HITS:
 ```cpp
+#include "..\LinkRanking\LinkRanking.h"
 
 auto x = TransitionMatrixBuilder()
             .SetPath("path/to/datafram")
